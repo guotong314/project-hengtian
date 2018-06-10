@@ -1,0 +1,24 @@
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+    font-weight: normal;
+}
+
+em {
+    font-style: normal;
+}
