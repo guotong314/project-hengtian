@@ -212,6 +212,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
+a{
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+}
+ul li{
+  list-style-type: none;
+}
 /*页头*/
 .common-header a {
   color: #4b4b4b;
@@ -224,15 +233,9 @@ export default {
 }
 
 .header-top {
+  margin: 0 auto;
   width: 1230px;
   height: 46px;
-  margin: 0 auto;
-}
-
-.welcome-msg {
-  float: left;
-  line-height: 46px;
-  font-size: 14px;
 }
 
 .tel {
@@ -249,67 +252,72 @@ export default {
   color: #2e3191;
 }
 
+.welcome-msg {
+  float: left;
+  font-size: 14px;
+  line-height: 46px;
+}
+
 .toolbar {
   width: 100%;
   height: 88px;
 }
 
 .toolbar > ul {
+  margin: 0 auto;
+  padding-left: 40px;
   width: 1246px;
   height: 88px;
-  padding-left: 40px;
-  margin: 0 auto;
 }
 
 .toolbar > ul > li {
-  width: 110px;
-  height: 88px;
   float: left;
   position: relative;
-}
-
-.toolbar > ul > li > a:hover {
-  background-color: #363ab2;
-  color: #fff;
-}
-
-.toolbar > ul > li > a {
-  display: block;
   width: 110px;
   height: 88px;
-  line-height: 88px;
-  text-align: center;
-  font-size: 18px;
-  color: #4b4b4b;
 }
 
 .toolbar .logo {
   width: 436px;
 }
+.toolbar > ul > li:hover .dropdown{
+  display: block; 
+ 
+}
+.toolbar > ul > li:hover >a{
+  color: #fff;
+  background-color: #363ab2;
+}
+.toolbar > ul > li > a {
+  display: block;
+  width: 110px;
+  height: 88px;
+  font-size: 18px;
+  line-height: 88px;
+  text-align: center;
+  color: #4b4b4b;
+}
 
+/* 下拉公共样式 */
 .dropdown {
+  display: none;
   position: absolute;
   top: 88px;
   left: 0;
+  padding: 0;
   width: 110px;
   background-color: #fff;
-  display: none;
 }
 
 .dropdown a {
   display: block;
   width: 110px;
   height: 34px;
+  font-size: 15px;
   line-height: 34px;
   text-align: center;
-  font-size: 15px;
   color: #1c1c1c;
 }
-
-.dropdown a:hover {
-  background-color: #fff;
-}
-
 .dropdown a:hover {
   background-color: #363ab2;
   color: #fff;
@@ -323,25 +331,133 @@ export default {
 .banner img {
   width: 100%;
 }
+/*侧边菜单等公共样式*/
+
+.wrap {
+    margin: 0 auto;
+    padding-right: 34px;
+    width: 1190px;
+}
+
+.menu {
+  float: left;
+  width: 184px;
+}
+
+.menu-title {
+  border-bottom: 3px solid #eee;
+  padding: 28px 36px 12px 28px;
+  width: 120px;
+  height: 52px;
+  color: #fff;
+  background-color: #363ab2;
+}
+
+.menu-title .title {
+  font-size: 30px;
+}
+
+.menu-title .subtitle {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+}
+.menu a {
+  display: block;
+  border-bottom: 1px solid #fff;
+  padding-left: 36px;
+  width: calc(100% - 36px);
+  height: 35px;
+  font-family: "YouYuan";
+  font-size: 15px;
+  line-height: 35px;
+  text-decoration: none;
+  color: #2d2d2d;
+  background-color: #eee;
+}
+
+.menu a:hover,
+.menu .active {
+  color: #fff;
+  background-color: #363ab2;
+}
+
+/* 可变的中间部分 */
+.content {
+  overflow: hidden;
+  margin-left: 184px;
+  padding-left: 54px;
+  width: 952px;
+}
+
+.trail {
+  margin-top: 22px;
+  width: 100%;
+  height: 18px;
+}
+
+.trail strong {
+  display: block;
+  float: left;
+  margin-right: 8px;font-weight: normal;
+  color: #2e3191;
+}
+
+.line-group {
+  display: inline-block;
+  width: 880px;
+  height: 18px;
+}
+
+.line {
+  float: left;
+  border-bottom: 9px solid #e6e6e6;
+  height: 8px;
+}
+
+.line-a {
+  border-color: #16578f;
+  width: 6px; 
+}
+
+.line-b {
+  border-color: #f6f6f6;
+  width: 12px;
+}
+
+.line-c {
+  width: 854px;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /*页脚*/
+.common-footer * {
+  font-size: 12px;
+  color: #e6e6e6;
+}
+
 .common-footer {
   width: 100%;
-  height: 306px;
+  height: 312px;
   background-color: #333;
 }
 
 .top {
+  margin: 0 auto;
+  padding-top: 24px;
   width: 1200px;
   height: 206px;
-  padding-top: 24px;
-  margin: 0 auto;
 }
 
 .top .link ul {
   display: block;
   float: left;
+  margin-right: 50px;
   width: 60px;
-  margin-right: 54px;
 }
 
 .top .link li {
@@ -352,18 +468,9 @@ export default {
   margin-bottom: 14px;
 }
 
-.bottom {
-  width: 100%;
-  height: 76px;
-  border-top: 1px dashed #575757;
-  text-align: center;
-  line-height: 76px;
-  clear: both;
-}
-
 .connect {
-  width: 326px;
   float: left;
+  width: 326px;
 }
 
 .connect .title {
@@ -384,8 +491,8 @@ export default {
 }
 
 .tel-block ul {
-  width: 80px;
   margin-right: 0;
+  width: 80px;
   line-height: 20px;
 }
 
@@ -405,9 +512,9 @@ export default {
 }
 
 .qrcode > div {
+  float: left;  
   width: 100px;
   height: 130px;
-  float: left;
 }
 
 .wechat {
@@ -418,118 +525,16 @@ export default {
 .phone-label {
   width: 100px;
   height: 30px;
-  text-align: center;
   line-height: 42px;
+  text-align: center;
 }
 
-.common-footer * {
-  color: #e6e6e6;
-  font-size: 12px;
-}
-/*菜单等公共样式*/
-
-.wrap {
-    width: 1190px;
-    padding-right: 34px;
-    margin: 0 auto;
-}
-
-.menu {
-  width: 184px;
-  float: left;
-}
-
-.menu-title {
-  width: 120px;
-  height: 52px;
-  background-color: #363ab2;
-  border-bottom: 3px solid #eee;
-  color: #fff;
-  padding: 28px 36px 12px 28px;
-}
-
-.menu-title .title {
-  font-size: 30px;
-}
-
-.menu-title .subtitle {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 18px;
-}
-
-.menu a {
-  display: block;
-  width: calc(100% - 36px);
-  height: 35px;
-  border-bottom: 1px solid #fff;
-  line-height: 35px;
-  padding-left: 36px;
-  background-color: #eee;
-  color: #2d2d2d;
-  font-size: 15px;
-  font-family: "YouYuan";
-}
-
-.menu a:hover,
-.menu .active {
-  background-color: #363ab2;
-}
-
-.menu a:hover,
-.menu .active {
-  color: #fff;
-}
-
-.content {
-  margin-left: 184px;
-  width: 952px;
-  padding-left: 54px;
-  overflow: hidden;
-}
-
-.trail {
-  width: 100%;
-  height: 18px;
-  margin-top: 22px;
-}
-
-.trail strong {
-  color: #2e3191;
-  font-weight: normal;
-  display: block;
-  float: left;
-  margin-right: 8px;
-}
-
-.line-group {
-  width: 880px;
-  height: 18px;
-  display: inline-block;
-}
-
-.line {
-  height: 8px;
-  border-bottom: 9px solid #e6e6e6;
-  float: left;
-}
-
-.line-a {
-  width: 6px;
-  border-color: #16578f;
-}
-
-.line-b {
-  width: 12px;
-  border-color: #f6f6f6;
-}
-
-.line-c {
-  width: 854px;
-}
-
-.clearfix:after {
-  content: "";
-  display: block;
+.bottom {
   clear: both;
+  border-top: 1px dashed #575757;
+  width: 100%;
+  height: 76px;
+  line-height: 76px;
+  text-align: center;
 }
 </style>

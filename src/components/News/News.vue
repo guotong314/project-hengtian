@@ -130,80 +130,83 @@ export default {
 </script>
 
 <style scoped>
+.main {
+  margin-bottom: 94px;
+}
 .news {
-  width: 940px;
   padding-top: 42px;
   padding-bottom: 30px;
+  width: 940px;
 }
 .news a {
   display: block;
+  margin-bottom: 22px;
   width: 100%;
   height: 68px;
-  margin-bottom: 22px;
   cursor: pointer;
 }
 .news li:hover span {
   background-color: #3838b0;
 }
 .news span {
-  display: block;
-  width: 42px;
-  height: 56px;
-  background-color: #969696;
-  color: #fff;
-  font-size: 30px;
-  padding-left: 14px;
-  line-height: 56px;
-  margin-right: 32px;
+  display: block; 
   float: left;
   margin-top: 6px;
+  margin-right: 32px;
+  padding-left: 14px;
+  width: 42px;
+  height: 56px;
+  font-size: 30px;
+  line-height: 56px;
+  color: #fff;
+  background-color: #969696;
 }
 h2 {
   margin: 0;
+  margin-bottom: 12px;
   font-weight: normal;
   font-size: 14px;
-  margin-bottom: 12px;
   color: #333;
 }
 .news div {
-  width: 846px;
-  height: 68px;
   float: left;
   border-bottom: 1px solid #ababab;
+  width: 846px;
+  height: 68px;
 }
 .news p {
-  font-size: 12px;
-  color: #646464;
-  font-family: "YouYuan";
-  line-height: 18px;
-  margin-top: -6px;
   overflow: hidden;
+  margin-top: -6px;
   height: 36px;
+  font-family: "YouYuan";
+  font-size: 12px;
+  line-height: 18px;
+  color: #646464;
 }
 .pager {
-  border: 1px solid #dddddd;
-  border-radius: 4px;
   overflow: hidden;
   zoom: 1;
-  max-width: 570px;
   margin: 0 auto;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  max-width: 570px; 
 }
 .pager a {
-  border-right: 1px solid #dddddd;
   float: left;
+  border-right: 1px solid #dddddd;
   width: 32px;
   height: 32px;
-  color: #858585;
   font-size: 14px;
-  text-align: center;
   line-height: 32px;
+  text-align: center;
+  color: #858585;
 }
 .pager li:last-child > a {
   border: none;
 }
 .pager a:hover {
-  background-color: #eee;
   color: #333;
+  background-color: #eee;
 }
 .pager .first > a,
 .pager .last > a {
@@ -212,8 +215,5 @@ h2 {
 .pager .prev > a,
 .pager .next > a {
   width: 66px;
-}
-.main {
-  margin-bottom: 94px;
 }
 </style>

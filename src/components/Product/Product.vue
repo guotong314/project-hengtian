@@ -65,54 +65,54 @@ export default {
 
 <style scoped>
 .product-item {
+  margin-top: 50px;
+  margin-left: 26px;
+  margin-bottom: 25px;
   width: 904px;
   height: 300px;
-  margin-left: 26px;
-  margin-top: 50px;
-  margin-bottom: 25px;
 }
 .product-item .item-info {
+  float: left;
   width: 448px;
   height: 297px;
-  float: left;
 }
 .divide {
+  border-top: 2px solid #0072af;
   width: 108px;
   height: 38px;
-  border-top: 2px solid #0072af;
 }
 .product-item .item-info .item-detail {
+  padding-left: 14px;
   width: 410px;
   height: 90px;
   line-height: 30px;
-  padding-left: 14px;
 }
 .product-item .item-info .item-name {
+  margin: -10px 0 16px;
   font-family: "STXihei";
   font-weight: normal;
   font-size: 32px;
   color: rgb(76, 76, 76);
-  margin: -10px 0 16px;
 }
 .product-item .item-info em {
+  font-family: "YouYuan";
   font-size: 18px;
   color: rgb(26, 66, 241);
-  font-family: "YouYuan";
 }
 .product-item .item-info .feature {
+  font-family: "YouYuan";
   font-size: 14px;
   color: rgb(121, 121, 121);
-  font-family: "YouYuan";
 }
 .product-item .item-info .more {
   display: block;
+  margin-top: 18px;
+  border: 1px solid rgb(0, 40, 214);
   width: 118px;
   height: 39px;
-  color: rgb(0, 40, 214);
-  border: 1px solid rgb(0, 40, 214);
-  text-align: center;
   line-height: 39px;
-  margin-top: 18px;
+  text-align: center;
+  color: rgb(0, 40, 214);
   background-color: rgb(245, 245, 252);
 }
 .content {
@@ -122,9 +122,9 @@ export default {
   float: left;
 }
 .item-pic img {
-  width: 420px;
-  height: 292px;
   border: 2px solid #dcdcdc;
   box-shadow: 1px 1px 1px #3b3b3b;
+  width: 420px;
+  height: 292px;
 }
 </style>

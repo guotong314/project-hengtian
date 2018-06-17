@@ -54,12 +54,19 @@ export default {
 </script>
 
 <style scoped>
+.main {
+  min-height: 300px;
+}
+.main img {
+  width: 296px;
+  float: right;
+  margin-top: 54px;
+}
 .text {
-  width: 100%;
-  padding-top: 44px;
-  margin-bottom: 26px;
   width: 640px;
+  padding-top: 44px;
   margin-right: 16px;
+  margin-bottom: 26px;
   float: left;
   clear: both;
 }
@@ -69,12 +76,5 @@ export default {
   font-size: 14px;
   line-height: 36px;
 }
-.main {
-  min-height: 300px;
-}
-.main img {
-  width: 296px;
-  float: right;
-  margin-top: 54px;
-}
+
 </style>

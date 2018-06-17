@@ -54,48 +54,48 @@ export default {
 }
 
 .con-bg {
+  position: relative;
   width: auto;
   height: 1000px;
-  position: relative;
 }
 
 .con {
-  width: 1065px;
-  height: 941px;
-  border: 1px solid rgb(204, 204, 204);
-  border-radius: 4px;
-  background-color: rgb(255, 255, 255);
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
   padding-left: 55px;
   padding-right: 55px;
+  width: 1065px;
+  height: 941px;
+  background-color: rgb(255, 255, 255);
 }
 
 .con h3 {
-  font-size: 24px;
-  font-weight: normal;
-  font-family: "微软雅黑";
-  color: #333333;
-  text-align: center;
   margin-top: 42px;
   margin-bottom: 25px;
+  font-family: "微软雅黑";
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #333333;
 }
 
 hr {
-  color: rgb(190, 190, 190);
   margin-left: -30px;
   margin-right: -30px;
+  color: rgb(190, 190, 190);
 }
 
 .con .art-note {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 55px;
   margin-top: 20px;
+  margin-bottom: 55px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .con .art-note span {
@@ -104,29 +104,29 @@ hr {
 }
 
 .article {
-  width: 1059px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  width: 1059px;
 }
 
 .article .last {
+  padding-left: 2em;
   width: 799px;
   text-indent: 0;
-  padding-left: 2em;
 }
 
 .article p {
-  text-indent: 2em;
-  line-height: 40px;
-  margin-bottom: 30px;
-  width: 831px;
   float: left;
   margin-right: 15px;
+  margin-bottom: 30px;
+  width: 831px;
+  line-height: 40px;
+  text-indent: 2em;
 }
 
 .article p > span {
-  color: #000000;
   font-weight: 550;
+  color: #000000;
 }
 
 .new-hand {
@@ -146,9 +146,9 @@ hr {
 }
 
 .pn {
+  overflow: hidden;
   height: 100px;
   line-height: 100px;
-  overflow: hidden;
 }
 
 .pn .prev-art {
@@ -157,13 +157,5 @@ hr {
 
 .pn .next-art {
   float: right;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  cursor: pointer;
 }
 </style>
